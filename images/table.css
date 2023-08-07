@@ -1,0 +1,114 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    display: inline-block; /* Display divs inline, adjust as needed */
+}
+.special-div {
+    background-color: #36A7FD;
+    clear: both; /* Clear the float to move below other divs */
+}
+
+.details-container{
+    background-color: #f2f2f2;
+}
+.form-container{
+     
+    margin: 20px auto;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+.container {
+    
+    margin: 20px auto;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto; /* Enable horizontal scrolling */
+    
+    
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0c1e2e;
+    
+}
+.details-container .form-container h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:#337ab7;
+}
+.details-container {
+    max-height: 700px;
+    
+    overflow: auto;
+}
+.btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .btns a {
+    text-decoration: none;
+    color: #333;
+    background-color: #337ab7;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color:white;
+  }
+  
+  .btns a:hover {
+    background-color: #382f2f;
+  }
+  .welcome{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(64, 161, 64);
+    color: #382f2f;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+
+  }
+  .welcome:hover{
+    color: #ddd;
+    background-color: rgb(117, 92, 59);
+  }
