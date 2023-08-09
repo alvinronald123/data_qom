@@ -49,6 +49,7 @@ try {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./chart.min.js"></script>
+    <link rel="icon" href="./images/logo_queen.png">
     <title>Document</title>
     <style>
         * {
@@ -628,7 +629,7 @@ box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.112),-10px -10px 15px rgba(0, 0, 0, 0
     <div class='sidebar pointer'>
         <div class="logo h-align end-to-end">
             <span class="h-align">
-                <h3 class="purple-text">QUEEN OF MARTYS OLD STUDENTS</h3>
+                <h3 class="purple-text">QOMOSA</h3>
                 <div class="circle red full-round icons"></div>
             </span>
             <img src="./images/bars.svg" alt="" class="icons" onclick="hideSidebar()">
@@ -636,12 +637,12 @@ box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.112),-10px -10px 15px rgba(0, 0, 0, 0
         <div class="profile spacing text-center">
             <div class="ribbon full-round">
                 <div class="profile-pic-container trim full-round">
-                    <img src="./upload/one.png" alt="">
+                    <img src="./upload/logo_queen.png" alt="">
                 </div>
             </div>
             <h5 id = "adminname"></h5>
         </div>
-        <div class="menu">
+        <div  class="menu">
             <p class="very-dull space-around">MAIN</p>
             <ul class="overlay-scroll trim my-list">
                 <li class="h-align v-space end-to-end ">

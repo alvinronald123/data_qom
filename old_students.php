@@ -51,6 +51,7 @@ try {
     <script src="./chart.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="table1.css">
+    
     <style>
         * {
             margin: 0;
@@ -755,7 +756,7 @@ th {
     <div class='sidebar pointer'>
         <div class="logo h-align end-to-end">
             <span class="h-align">
-                <h3 class="purple-text">QUEEN OF MARTYS OLD STUDENTS</h3>
+                <h3 class="purple-text">QOMOSA</h3>
                 <div class="circle red full-round icons"></div>
             </span>
             <img src="./images/bars.svg" alt="" class="icons" onclick="hideSidebar()">
@@ -763,7 +764,7 @@ th {
         <div class="profile spacing text-center">
             <div class="ribbon full-round">
                 <div class="profile-pic-container trim full-round">
-                    <img src="./upload/one.png" alt="">
+                    <img src="./upload/logo_queen.png" alt="">
                 </div>
             </div>
             <h5 id = "adminname"></h5>
@@ -862,8 +863,8 @@ th {
                 <th>COURSE</th>
                 <th>ADDRESS</th>
                 <th>OCCUPATION</th>
-                <th>YEAR FROM</th>
-                <th>YEAR TO</th>
+                <th>START YEAR </th>
+                <th>END YEAR</th>
                 <th>AGE</th>
             </tr>
         </thead>
@@ -925,7 +926,7 @@ th {
               <!--   <div class="switch icons full-round" onClick = "mode()">
                     <div class="thumb full-round" id = 'thumb'></div>
                 </div> -->
-                <p style="margin-right: 10px;" class = 'faqs'>SAVE</p>
+             <a href="./composer/new.php">   <p style="margin-right: 10px;" class = 'faqs'>SAVE</p> </a>
             <div class="h-align">
               <!--   <div class="switch icons full-round" onClick = "mode()">
                     <div class="thumb full-round" id = 'thumb'></div>

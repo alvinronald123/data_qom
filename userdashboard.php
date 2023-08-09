@@ -28,7 +28,9 @@ else{
 <meta charset="UTF-8">
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="icon" href="./images/logo_queen.png">
+<link rel="stylesheet" href="css/admin.css">
+
 <style>
     * {
         margin: 0;
@@ -615,7 +617,7 @@ input[type=file]::-webkit-file-upload-button {
 </style>
 
 <body>
-    <div class="sidebar ">
+    <div class="sidebar " id="sidebar">
         <p id="title">OLD STUDENT</p>
         <div class="profile">
             <div class="img-container trim">
@@ -758,7 +760,7 @@ input[type=file]::-webkit-file-upload-button {
                 </td>
                 
                 <td>
-                    Year From
+                    Start Year 
                 </td>
                 <td>
                 <input type="text" class="input extra" placeholder="year from" name='year_from'id = 'username'>
@@ -767,7 +769,7 @@ input[type=file]::-webkit-file-upload-button {
             </tr>
             <tr>
                 <td>
-                    Year To
+                    End Year 
                 </td>
                 <td>
                     <input type="text" class="input extra" placeholder="year to" name='year_to'id = 'username'>
@@ -905,6 +907,7 @@ input[type=file]::-webkit-file-upload-button {
 
         }
     </script>
+
     <script>
           ///validate update form
 
@@ -1078,7 +1081,7 @@ function getMessages(){
                 <h3 class="space-between">All Messages To</h3>
                 <div class="title space-between">
                     <div class="img-message">
-                        <img src="./upload/alvin.jpg" alt="">
+                        <img src="./upload/logo_queen.png" alt="">
                     </div>
                     <div class="details-message">
                         <p>${data[1]}</p>
