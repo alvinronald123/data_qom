@@ -39,7 +39,7 @@ try {
 } catch (\Throwable $th) {
     //throw $th;
 }
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -845,6 +845,19 @@ function fetchuserdata(){
     </div>
     <form action="./adduser.php" id="add-user" onsubmit="userform()" method="post">
         <table class="add-user round">
+        <tr>
+            <td>Action</td>
+        </tr>
+        <tr>
+            <td>
+                <select style="background-color: #343965;" class="input button" id="account-action" name="account-action">
+                <option value="">Select an Action</option>
+                <option value="lock">Lock Account</option>
+                <option value="unlock">Unlock Account</option>
+                <option value="delete">Delete Account</option>
+                        </select>
+            </td>
+        </tr>
             <tr>
                 <td>Username</td>
             </tr>
@@ -868,6 +881,12 @@ function fetchuserdata(){
 
             </tr>
             <tr>
+                <td>
+                   <a >  <input type="submit" value="Action" class="zero-border green message "  name="account-action"> </a>
+                </td>
+
+            </tr>
+            <tr>
 
                     <td>
                         <input type="reset" onclick="removeusererrror()" value="Clear fields" class="zero-border red message" id="cancel-add-user">
@@ -876,6 +895,9 @@ function fetchuserdata(){
             </tr>
         </table>
     </form>
+   
+    
+
     <form action="addmails.php" class="add-mail" onsubmit="mailform()" method="post">
         <table class=" round">
             <tr>
@@ -1403,7 +1425,6 @@ drawDoughnut()
 getUsername()
 
 })
-                </script>
+    </script>
 </body>
-
-</html>
+</html> 

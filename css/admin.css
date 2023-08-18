@@ -1,0 +1,23 @@
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+.bar-icon{
+    display: none;
+}
+@media(max-width:991px) {
+    .search, .center-h
+   {
+    padding:2rem;
+  }
+  .search-bar, .center-v{
+      padding: 2rem;
+  }
+
+  }
+
+  @media(max-width:768px){
+
+  }

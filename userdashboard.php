@@ -29,7 +29,7 @@ else{
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="./images/logo_queen.png">
-<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="./css/admin.css">
 
 <style>
     * {
@@ -614,9 +614,48 @@ input[type=file]::-webkit-file-upload-button {
                 text-shadow: none;
                 opacity: .5;
             }
+            @media(max-width: 768px){
+                body{
+                    width: 100%;
+                    height: max-content;
+                }
+                .sidebar{
+                    display: none;
+                }
+                .search-center{
+                    margin: 0;
+                    margin-left: -5rem;
+                }
+                .bar-icon{
+                    display: flex;
+                    width: 50px; 
+                    height:50px;
+                 }
+                 .bar-icon img{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    object-fit: cover;
+                 }
+                 .search-bar{
+                    width:100%;
+                    margin-top: 30px;
+                    margin-right: 100px;
+
+
+                 }
+                 .purple{
+                    display: flex;
+                    flex-direction: column;
+                 }
+            }
+           
 </style>
 
 <body>
+   <div class="bar-icon">
+            <img  src="./icons/bars-solid.svg" alt="">
+    </div>
     <div class="sidebar " id="sidebar">
         <p id="title">OLD STUDENT</p>
         <div class="profile">
@@ -663,6 +702,7 @@ input[type=file]::-webkit-file-upload-button {
             >
         </div>
     </div>
+    
     <div class="purple round hidden center-v">
         <div class="delivered img-back">
             <h1>

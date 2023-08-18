@@ -49,6 +49,7 @@ try {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./chart.min.js"></script>
+    <link rel="icon" href="./images/logo_queen.png">
     <title>Document</title>
     <link rel="stylesheet" href="table1.css">
     
@@ -651,13 +652,13 @@ box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.112),-10px -10px 15px rgba(0, 0, 0, 0
 }
 
 .details-container{
-    background-color: #f2f2f2;
+    background-color:#337ab7;
 }
 .form-container{
      
     margin: 20px auto;
 
-    background-color: #fff;
+    background-color:#337ab7;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow-x: auto; /* Enable horizontal scrolling */
@@ -666,7 +667,7 @@ box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.112),-10px -10px 15px rgba(0, 0, 0, 0
     
     margin: 20px auto;
 
-    background-color: #fff;
+    background-color:#337ab7;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow-x: auto; /* Enable horizontal scrolling */
@@ -926,13 +927,18 @@ th {
               <!--   <div class="switch icons full-round" onClick = "mode()">
                     <div class="thumb full-round" id = 'thumb'></div>
                 </div> -->
-             <a href="./composer/new.php">   <p style="margin-right: 10px;" class = 'faqs'>SAVE</p> </a>
+                <a href="./composer/new.php">   <p style="margin-right: 10px;" class = 'faqs'>SAVE</p> </a>
+                <p style="margin-right: 40px; width:100px;" class = 'faqs'>Delete Member</p>
+                
+             
+        
             <div class="h-align">
               <!--   <div class="switch icons full-round" onClick = "mode()">
                     <div class="thumb full-round" id = 'thumb'></div>
                 </div> -->
                 <p class = 'faqs'>FAQs</p>
             </div>
+         
             
             <div class="notification parent" onclick="fetchMessages()">
                 <img src="./images/bell.svg" alt="" class="icons child">

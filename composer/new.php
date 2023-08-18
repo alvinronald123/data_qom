@@ -25,6 +25,21 @@ if (!$result) {
 $spreadsheet = new \PhpOffice\PhpSpreadsheet\Spreadsheet();
 $sheet = $spreadsheet->getActiveSheet();
 
+$headerStyle = [
+    'font' => [
+        'bold' => true,
+        'size' => 14, // Change this to your desired font size
+        'color' => ['rgb' => 'FFFFFF'], // Change this to your desired color
+    ],
+    'fill' => [
+        'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+        'color' => ['rgb' => '252A4A'], // Change this to your desired background color
+    ],
+];
+
+// Apply the style to the header row
+$sheet->getStyle('A1:K1')->applyFromArray($headerStyle);
+
 // Add header row
 $sheet->setCellValue("A1", "ID");
 $sheet->setCellValue("B1", "Name");
@@ -52,7 +67,7 @@ while ($row = $result->fetch_assoc()) {
     $sheet->setCellValue("H$rowNumber", $row['occupation']);
     $sheet->setCellValue("I$rowNumber", $row['year_from']);
     $sheet->setCellValue("J$rowNumber", $row['year_to']);
-    $sheet->setCellValue("K$rowNumber", $row['avge']);
+    $sheet->setCellValue("K$rowNumber", $row['age']);
     
     $rowNumber++; // Move to the next row
 }
