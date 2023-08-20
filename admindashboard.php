@@ -39,6 +39,7 @@ try {
 } catch (\Throwable $th) {
     //throw $th;
 }
+}
 
 ?>
 <!DOCTYPE html>
@@ -50,7 +51,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./chart.min.js"></script>
     <link rel="icon" href="./images/logo_queen.png">
-    <title>Document</title>
+    <title>ADMIN</title>
     <style>
         * {
             margin: 0;
@@ -1427,5 +1428,4 @@ getUsername()
 })
     </script>
 </body>
-
-</html> 
+</html>
