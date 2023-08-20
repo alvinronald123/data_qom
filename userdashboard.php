@@ -637,17 +637,9 @@ input[type=file]::-webkit-file-upload-button {
                     display: flex;
                     object-fit: cover;
                  }
-                 .search-bar{
-                    width:100%;
-                    margin-top: 30px;
-                    margin-right: 100px;
+            
 
-
-                 }
-                 .purple{
-                    display: flex;
-                    flex-direction: column;
-                 }
+                 
             }
            
 </style>
