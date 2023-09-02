@@ -26,7 +26,7 @@ else{
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>QOM USER</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="./images/logo_queen.png">
 <link rel="stylesheet" href="./css/admin.css">
@@ -55,7 +55,7 @@ else{
     }
 
     body {
-        height: 100vh;
+        height: 100%;
         display: grid;
         background-color: var(--semi-light);
         grid-template-columns: .5fr 1fr 1fr;
@@ -614,6 +614,8 @@ input[type=file]::-webkit-file-upload-button {
                 text-shadow: none;
                 opacity: .5;
             }
+
+            /*
             @media(max-width: 768px){
                 body{
                     width: 100%;
@@ -637,11 +639,36 @@ input[type=file]::-webkit-file-upload-button {
                     display: flex;
                     object-fit: cover;
                  }
+                 .purple{
+                    margin-bottom: 50px;
+                 }
+                 .purple .blue{
+                        display: block;
+                        flex-direction: column; /* Stack boxes vertically on smaller screens */
+                         align-items: center; /* Center boxes horizontally */
+                         margin-left: 70px;
+                 }
+                 .mail {
+                display: block; /* Change to block display on mobile */
+                padding: 10px; /* Adjust padding for smaller screens */
+                font-size: 0.8rem; /* Adjust font size for smaller screens */
+                height: auto; /* Let the height adjust to content */
+                margin: 5px 0; /* Adjust margins for smaller screens */
+              
+             }
+             .search-bar{
+                padding: 10px; /* Adjust padding for smaller screens */
+                font-size: 0.9rem; /* Adjust font size for smaller screens */
+                margin-right: 280px;
+                margin-top: 50px;
+                width: 500px;
+             }
+
             
 
                  
             }
-           
+           */
 </style>
 
 <body>
@@ -703,6 +730,7 @@ input[type=file]::-webkit-file-upload-button {
             <p>Personally delivered Mail(s)</p>
         </div>
     </div>
+
     <div class="blue  round center-v">
         <div class="delivered img-back">
             <h1>
@@ -866,8 +894,7 @@ input[type=file]::-webkit-file-upload-button {
                 <td>Gender</td>
                 <td><input type="text" class="input extra" placeholder="gender" name="gender" id="gender"></td>
                 <td><input style="width: 150px; border-radius:20px;" type="submit" id="submit" value="Save To Database" name="submit" class="purple zero-border"></td>
-                <td><input style="width: 150px; border-radius:20px;" type="submit" id="submit" value="Update To Database" name="submit" class="purple zero-border"></td>
-            </tr>
+                </tr>
 
         </table>
      </form>

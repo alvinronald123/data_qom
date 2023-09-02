@@ -51,7 +51,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./chart.min.js"></script>
     <link rel="icon" href="./images/logo_queen.png">
-    <title>ADMIN</title>
+    <title>QOM ADMIN</title>
     <style>
         * {
             margin: 0;
@@ -881,12 +881,7 @@ function fetchuserdata(){
                 </td>
 
             </tr>
-            <tr>
-                <td>
-                   <a >  <input type="submit" value="Action" class="zero-border green message "  name="account-action"> </a>
-                </td>
-
-            </tr>
+            
             <tr>
 
                     <td>

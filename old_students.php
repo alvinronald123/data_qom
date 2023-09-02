@@ -50,7 +50,7 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./chart.min.js"></script>
     <link rel="icon" href="./images/logo_queen.png">
-    <title>Document</title>
+    <title>QOM DATA</title>
     <link rel="stylesheet" href="table1.css">
     
     <style>
@@ -928,7 +928,7 @@ th {
                     <div class="thumb full-round" id = 'thumb'></div>
                 </div> -->
                 <a href="./composer/new.php">   <p style="margin-right: 10px;" class = 'faqs'>SAVE</p> </a>
-                <p style="margin-right: 40px; width:100px;" class = 'faqs'>Delete Member</p>
+               
                 
              
         

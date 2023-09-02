@@ -33,7 +33,7 @@ $headerStyle = [
     ],
     'fill' => [
         'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
-        'color' => ['rgb' => '252A4A'], // Change this to your desired background color
+        'color' => ['rgb' => '8090B0'], // Change this to your desired background color
     ],
 ];
 

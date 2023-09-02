@@ -1,0 +1,70 @@
+Dear Customer,
+
+        Thank you for choosing our service to meet your web hosting needs.
+
+Your account has been created with the following details:
+
+
+
+//
+Database:	qomosa_coursework1
+Host:	localhost
+Username:	qomosa_coursework1
+Password:	ELFXMFV7E6
+
+
+//
+
+Username:       qomosa
+Password:       ay5rzMlP
+Domain:         qomosa.com
+
+To log in immediately, follow this link, using your username and password:
+
+https://167.114.64.93:2222
+
+Once your domain resolves, you will be able to follow this link:
+
+https://www.qomosa.com:2222
+
+Bandwidth:      5120 Megabytes
+Disk Space:     1024 Megabytes
+
+Virtual Domains:        1
+Subdomains:     3
+
+POP Email Accounts:     unlimited
+Email Forwarders:       unlimited
+Email Autoresponders:   10
+Email Mailing Lists:    unlimited
+POP Server:     mail.qomosa.com
+SMTP Server:    mail.qomosa.com
+Login:  qomosa
+Password:       ay5rzMlP
+
+FTP accounts:   unlimited
+Anonymous FTP:  OFF
+FTP Server:     ftp.qomosa.com
+Login:  qomosa
+Password:       ay5rzMlP
+
+IP:     167.114.64.93
+Use 167.114.64.93/~qomosa to access it until the domain resolves.
+
+You must use these dns servers for your domain. They can be changed through your domain registrar.
+
+NS1:    ns9.my-control-panel.com
+NS1 IP: 167.114.64.93
+NS2:    ns10.my-control-panel.com
+NS2 IP: 167.114.64.93
+
+MySQL Databases:        unlimited
+Domain Pointers:        unlimited
+SSH Access:     OFF
+Secure Socket Layer:    ON
+CGI:    OFF
+PHP:    ON
+DNS control:    ON
+
+Once again, thank you for choosing our hosting service
+Please don't hesitate to contact us if you have any questions

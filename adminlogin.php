@@ -23,5 +23,5 @@ if(isset($_POST['submit'])){
         header('Location: adminlogin.html');
     }
    
-}
+}  
 
