@@ -1,9 +1,9 @@
 <?php
 if (isset($_POST['submit'])) {
     $servername = "localhost";
-    $username = "root"; // Change this if you have a different MySQL username
+    $username = "qomosa_coursework1"; // Change this if you have a different MySQL username
     $password = "";     // Change this if you have a different MySQL password
-    $dbname = "coursework1";   // Use the name of your database
+    $dbname = "qomosa_coursework1";   // Use the name of your database
 
     // Create a connection
     $conn = new mysqli($servername, $username, $password, $dbname);

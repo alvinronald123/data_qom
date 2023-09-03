@@ -208,7 +208,9 @@ else{
     }
 
     .profile img {
-        width: 100px;
+        /* width: 100px; */
+        max-width: 130%;
+        min-height: 120%;
     }
 
     .profile {
@@ -223,6 +225,9 @@ else{
         width: 100px;
         height: 100px;
         border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
 
         background-color: slateblue;
     }
@@ -615,7 +620,7 @@ input[type=file]::-webkit-file-upload-button {
                 opacity: .5;
             }
 
-            /*
+            
             @media(max-width: 768px){
                 body{
                     width: 100%;
@@ -639,36 +644,11 @@ input[type=file]::-webkit-file-upload-button {
                     display: flex;
                     object-fit: cover;
                  }
-                 .purple{
-                    margin-bottom: 50px;
-                 }
-                 .purple .blue{
-                        display: block;
-                        flex-direction: column; /* Stack boxes vertically on smaller screens */
-                         align-items: center; /* Center boxes horizontally */
-                         margin-left: 70px;
-                 }
-                 .mail {
-                display: block; /* Change to block display on mobile */
-                padding: 10px; /* Adjust padding for smaller screens */
-                font-size: 0.8rem; /* Adjust font size for smaller screens */
-                height: auto; /* Let the height adjust to content */
-                margin: 5px 0; /* Adjust margins for smaller screens */
-              
-             }
-             .search-bar{
-                padding: 10px; /* Adjust padding for smaller screens */
-                font-size: 0.9rem; /* Adjust font size for smaller screens */
-                margin-right: 280px;
-                margin-top: 50px;
-                width: 500px;
-             }
-
-            
+                                       
 
                  
             }
-           */
+           
 </style>
 
 <body>
@@ -677,9 +657,15 @@ input[type=file]::-webkit-file-upload-button {
     </div>
     <div class="sidebar " id="sidebar">
         <p id="title">OLD STUDENT</p>
+        <?php
+        $sId=$_SESSION['staffID'];
+        $select = "SELECT userImg from staff WHERE staffID = '$sId'";
+        $selectQuery=mysqli_query($conn,$select) or die($conn->error);
+        $row=mysqli_fetch_assoc($selectQuery);
+        ?>
         <div class="profile">
             <div class="img-container trim">
-                <img src="./upload/<?php echo $id?>.jpg" alt="">
+                <img src="./upload/<?=$row['userImg']?>" alt="">
             </div>
             <p id="user"></p>
         </div>
@@ -779,6 +765,9 @@ input[type=file]::-webkit-file-upload-button {
                     <input type="password" class="input extra" id="pass" name="staffpass">
                 </td>
                 <td colspan="2"><input type="file" name="upload"></td>
+                <td>
+                    <input type="hidden" name="userId" value="<?=$_SESSION['staffID']?>">
+                </td>
             </tr>
             <tr>
                 <td>Gender</td>
