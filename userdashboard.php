@@ -55,7 +55,7 @@ else{
     }
 
     body {
-        height: 100%;
+        /* height: 100%;
         display: grid;
         background-color: var(--semi-light);
         grid-template-columns: .5fr 1fr 1fr;
@@ -63,8 +63,9 @@ else{
         gap: 10px;
         padding-bottom: 0;
         padding-right: 20px;
-        overflow: hidden;
+        overflow: hidden; */
     }
+
 
     .sidebar {
         grid-row: 1/5;
@@ -76,8 +77,8 @@ else{
     }
 
     .search-bar {
-        width: 100%;
-        padding: 5px 30px;
+        height: fit-content;
+        padding: 10px 4px;
         border-radius: 5px;
         background-color:aliceblue;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.03), -10px -10px 15px rgba(0, 0, 0, 0.041);
@@ -103,8 +104,8 @@ else{
     }
 
     .search {
-        grid-column: 2/4;
-        height:80%;
+        /* grid-column: 2/4; */
+        /* height:80%; */
 
         align-self: center;
     }
@@ -138,16 +139,16 @@ else{
 
     .purple {
         background-color:var(--blue);
-        width: 50%;
-                height: 90%;
+        /* width: 50%; */
+        /* height: 90%; */
 
     }
 
     .blue {
         background-color:var(--purple);
-        width: 50%;
-        height: 90%;
-        transform: translateX(-100%);
+        /* width: 50%;
+        height: 90%; */
+        /* transform: translateX(-100%); */
     }
 
     .round {
@@ -622,10 +623,19 @@ input[type=file]::-webkit-file-upload-button {
 
             
             @media(max-width: 768px){
-                body{
-                    width: 100%;
-                    height: max-content;
-                }
+                body {
+                /* height: 50%;
+               width: 50%;
+                background-color: var(--semi-light);
+                grid-template-columns: .1fr;
+                grid-template-rows: .2fr .7fr;
+               padding-bottom: 0;
+                padding-right: 10px;
+                overflow: hidden; */
+                        
+                    
+               
+            }
                 .sidebar{
                     display: none;
                 }
@@ -641,20 +651,101 @@ input[type=file]::-webkit-file-upload-button {
                  .bar-icon img{
                     width: 100%;
                     height: 100%;
-                    display: flex;
+                    display: ;
                     object-fit: cover;
-                 }
-                                       
+                            }
+                            
+                .mails {
+                    position: fixed;
+                    height: 400px;
+                    width: 400px;
+                    margin-top: 100px;
+                }
+                 /* .purple {
+                    background-color:var(--blue);
+                    width: 0%;
+                    height: 50%;
+                   display:flex;
+                   height: 200px; /* Set a fixed height */
+             overflow: scroll; /* Show a scrollbar if content overflows */
+          
+                } */
 
-                 
+                /* .blue {
+                    background-color:var(--purple);
+                    width: 50%;
+                    height: 50%;
+                    height: 100px; /* Set a fixed height */
+                    overflow: scroll; /* Show a scrollbar if content overflows */
+                    
+                
+                  
+                } */
+                        .mail p:nth-of-type(3) {
+                position: absolute;
+
+                left: 30%;
+            }
+            .mail p:nth-of-type(4) {
+                    position: absolute;
+
+                    left: 55%;
+                }
+          .center-v {
+           
+                align-items: center;
+            }
+    .trim {
+        overflow: hidden;
+    }
+
+    .main {
+        position: relative;
+        border-radius: 3px;
+    }
+
+                                                                
+
+            
+            .flex-wrap{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .sidebar{
+                width: 20%;
+            }
+            .c-right{
+                width: 80%;
             }
            
+           .wd-100{
+            width: 100%;
+        }
+        .wd-100  > div{
+            width: 100%;
+        }
+        .flex-50{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wd-50{
+            width: 50%;
+           }
+
+        .hg{
+            height: 120px;
+            display: flex;
+            width: 70%;
+            margin: 4px 6px;
+            align-items: center;
+        }
 </style>
 
 <body>
    <div class="bar-icon">
             <img  src="./icons/bars-solid.svg" alt="">
     </div>
+<div class="flex-wrap">
     <div class="sidebar " id="sidebar">
         <p id="title">OLD STUDENT</p>
         <?php
@@ -699,194 +790,204 @@ input[type=file]::-webkit-file-upload-button {
             </ul>
         </div>
     </div>
-    <div class="search center-h">
-        <div class="search-bar center-v">
-            <img src="./images/search.svg" alt="" class="icons">
-            <input type="text" class="input" placeholder="Search for mails by name of reciever"
-            oninput="searchResults()" id="search"
-            >
+    <div class="c-right">
+        <div class="search center-h wd-100">
+            <div class="search-bar center-v">
+                <img src="./images/search.svg" alt="" class="icons">
+                <input type="text" class="input" placeholder="Search for mails by name of reciever"
+                oninput="searchResults()" id="search"
+                >
+            </div>
         </div>
-    </div>
-    
-    <div class="purple round hidden center-v">
-        <div class="delivered img-back">
-            <h1>
-                <?php echo $delivered ?>.00
-            </h1>
-            <p>Personally delivered Mail(s)</p>
+        
+        <div class="flex-50">
+            <div class="round  center-v wd-50">
+                <div class="purple hg">
+                    <div class="delivered img-back">
+                        <h1>
+                            <?php echo $delivered ?>.00
+                        </h1>
+                        <p>Personally delivered Mail(s)</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="round center-v wd-50">
+                <div class="blue hg">
+                    <div class="delivered img-back">
+                        <h1>
+                        <?php echo $undelivered ?>.00
+                        </h1>
+                        <p>Pending Mails</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="main trim wd-100">
 
-    <div class="blue  round center-v">
-        <div class="delivered img-back">
-            <h1>
-            <?php echo $undelivered ?>.00
-            </h1>
-            <p>Pending Mails</p>
         </div>
-    </div>
-    <div class="main trim">
 
-    </div>
+        <div class="delete-confirm">
 
-    <div class="delete-confirm">
-
-    </div>
-    <form class="edit-profile" action="updateuser.php" enctype="multipart/form-data" method="post" onsubmit="updateform()">
-        <table cellspacing='10'>
-            <tr>
-                <td>
-                    username
-                </td>
-                <td>
-                    <input type="text" class="input extra" placeholder="insert username" name='staffname'id = 'username'>
-                </td>
-                <td>
-                    Date Of Birth
-                </td>
-                <td>
-                    <input type="date" class="input" name="staffdob" id="dob">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Email
-                </td>
-                <td>
-                    <input type="email" class="input extra" name="staffemail" id="email">
-                </td>
-                <td colspan="2">Select a profile picture (optional)</td>
-            </tr>
-            <tr>
-                <td>
-                    New password
-                </td>
-                <td>
-                    <input type="password" class="input extra" id="pass" name="staffpass">
-                </td>
-                <td colspan="2"><input type="file" name="upload"></td>
-                <td>
-                    <input type="hidden" name="userId" value="<?=$_SESSION['staffID']?>">
-                </td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td><input type="text" class="input extra" name="staffgender" id="gender"></td>
-                <td><input type="submit" id="submit" value="save" name="submit" class="purple zero-border"></td>
-                <td><input type="reset" value="Cancel" class="zero-border red" id="cancel"></td>
-            </tr>
-
-        </table>
-     </form>
-
-
-     <!----- Sign up form-------->
-     <form class="edit-profile" action="old_student_database.php" enctype="multipart/form-data" method="post" onsubmit="updateforms(event)">
-
-        <table id="myTable" cellspacing='10'>
-            <tr>
-                <td>
-                    Name
-                </td>
-                <td>
-                    <input type="text" class="input extra" placeholder="insert name" name='name'id = 'username'>
-                </td>
-                
-                <td>
-                    Date Of Birth
-                </td>
-                <td>
-                    <input type="date" class="input" name="dob" id="dob">
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    Age
-                </td>
-                <td>
-                    <input type="text" class="input extra" placeholder="insert age" name='age'id = 'username'>
-                </td>
-                
-                <td>
-                    Start Year 
-                </td>
-                <td>
-                <input type="text" class="input extra" placeholder="year from" name='year_from'id = 'username'>
-                </td>
-                
-            </tr>
-            <tr>
-                <td>
-                    End Year 
-                </td>
-                <td>
-                    <input type="text" class="input extra" placeholder="year to" name='year_to'id = 'username'>
-                </td>
-                
-              
-                
-            </tr>
-
-
-            <tr>
-                <td>
-                    Occupation
-                </td>
-                <td>
-                    <input type="text" class="input extra" placeholder="insert occupation" name='occupation'id = 'username'>
-                </td>
-                
-                <td>
-                    Address
-                </td>
-                <td>
-                <input type="text" class="input extra" placeholder="insert address" name='address'id = 'username'>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td>
-                    Phone Number
-                </td>
-                <td>
-                    <input type="text" class="input extra" placeholder="phone number" name='phone_number'id = 'username'>
-                </td>
-                
-                <td>
-                    University
-                </td>
-                <td>
-                <input type="text" class="input extra" placeholder="university branch" name='university'id = 'username'>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td>
-                    Email
-                </td>
-                <td>
-                    <input type="email" class="input extra" placeholder="email" name="email" id="email">
-                </td>
-                
-            </tr>
-            <tr>
-                <td>
-                    Course
-                </td>
-                <td>
-                <input type="text" class="input extra" placeholder="insert course" name='course'id = 'username'>
-              
-            <tr>
-                <td>Gender</td>
-                <td><input type="text" class="input extra" placeholder="gender" name="gender" id="gender"></td>
-                <td><input style="width: 150px; border-radius:20px;" type="submit" id="submit" value="Save To Database" name="submit" class="purple zero-border"></td>
+        </div>
+        <form class="edit-profile" action="updateuser.php" enctype="multipart/form-data" method="post" onsubmit="updateform()">
+            <table cellspacing='10'>
+                <tr>
+                    <td>
+                        username
+                    </td>
+                    <td>
+                        <input type="text" class="input extra" placeholder="insert username" name='staffname'id = 'username'>
+                    </td>
+                    <td>
+                        Date Of Birth
+                    </td>
+                    <td>
+                        <input type="date" class="input" name="staffdob" id="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" class="input extra" name="staffemail" id="email">
+                    </td>
+                    <td colspan="2">Select a profile picture (optional)</td>
+                </tr>
+                <tr>
+                    <td>
+                        New password
+                    </td>
+                    <td>
+                        <input type="password" class="input extra" id="pass" name="staffpass">
+                    </td>
+                    <td colspan="2"><input type="file" name="upload"></td>
+                    <td>
+                        <input type="hidden" name="userId" value="<?=$_SESSION['staffID']?>">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="text" class="input extra" name="staffgender" id="gender"></td>
+                    <td><input type="submit" id="submit" value="save" name="submit" class="purple zero-border"></td>
+                    <td><input type="reset" value="Cancel" class="zero-border red" id="cancel"></td>
                 </tr>
 
-        </table>
-     </form>
+            </table>
+        </form>
+
+
+        <!----- Sign up form-------->
+        <form class="edit-profile" action="old_student_database.php" enctype="multipart/form-data" method="post" onsubmit="updateforms(event)">
+
+            <table id="myTable" cellspacing='10'>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" class="input extra" placeholder="insert name" name='name'id = 'username'>
+                    </td>
+                    
+                    <td>
+                        Date Of Birth
+                    </td>
+                    <td>
+                        <input type="date" class="input" name="dob" id="dob">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        <input type="text" class="input extra" placeholder="insert age" name='age'id = 'username'>
+                    </td>
+                    
+                    <td>
+                        Start Year 
+                    </td>
+                    <td>
+                    <input type="text" class="input extra" placeholder="year from" name='year_from'id = 'username'>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        End Year 
+                    </td>
+                    <td>
+                        <input type="text" class="input extra" placeholder="year to" name='year_to'id = 'username'>
+                    </td>
+                    
+                
+                    
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Occupation
+                    </td>
+                    <td>
+                        <input type="text" class="input extra" placeholder="insert occupation" name='occupation'id = 'username'>
+                    </td>
+                    
+                    <td>
+                        Address
+                    </td>
+                    <td>
+                    <input type="text" class="input extra" placeholder="insert address" name='address'id = 'username'>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Phone Number
+                    </td>
+                    <td>
+                        <input type="text" class="input extra" placeholder="phone number" name='phone_number'id = 'username'>
+                    </td>
+                    
+                    <td>
+                        University
+                    </td>
+                    <td>
+                    <input type="text" class="input extra" placeholder="university branch" name='university'id = 'username'>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" class="input extra" placeholder="email" name="email" id="email">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Course
+                    </td>
+                    <td>
+                    <input type="text" class="input extra" placeholder="insert course" name='course'id = 'username'>
+                
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="text" class="input extra" placeholder="gender" name="gender" id="gender"></td>
+                    <td><input style="width: 150px; border-radius:20px;" type="submit" id="submit" value="Save To Database" name="submit" class="purple zero-border"></td>
+                    </tr>
+
+            </table>
+        </form>
+    </div>
+</div>
      
 
      <!------ sign Up form ----->
