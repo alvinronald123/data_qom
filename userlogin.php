@@ -1,4 +1,18 @@
 <?php
+// Device detection and redirection
+/*
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
+echo "User Agent String: " . $userAgent; // Debugging output
+
+
+if (strpos($userAgent, 'Mobile') !== false || strpos($userAgent, 'Android') !== false || strpos($userAgent, 'iPhone') !== false || strpos($userAgent, 'iPad') !== false) {
+    // Redirect to mobile.php for mobile devices
+    header("Location: mobile.php");
+    exit();
+}
+*/
+
+// Continue with the rest of your code
 session_start();
 include "./connect.php";
 
